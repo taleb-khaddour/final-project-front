@@ -1,0 +1,233 @@
+:root {
+  --main-color: #e9768f;
+  --primary-color: #eff1f3;
+  --bg-color: #f6f8fb;
+  --hover: #5a4d3e;
+  --black: #222;
+  --white: #fff;
+  --border: 0.1rem solid #aaa;
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  --orange: #ff9800;
+  --black: #1d1c1c;
+  --white: #fff;
+  --light-color: #666;
+}
+
+
+.contact {
+  width: 90%;
+  margin: 0 2rem;
+}
+.contact .contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+.contact .contact-row .contact-image {
+  flex: 1 1 40rem;
+}
+
+.contact .contact-row .contact-image img {
+  width: 100%;
+}
+
+/* contact css icons */
+
+.heading-icons {
+  font-size: 4rem;
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin-bottom: 6rem;
+}
+
+.contact .icons-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 20rem;
+}
+
+.contact .icons-container .contact-icons {
+  padding: 2rem;
+  box-shadow: var(--box-shadow);
+  border-radius: 2rem;
+  text-align: center;
+  outline: 0.1rem solid rgba(0, 0, 0, 0.1);
+  outline-offset: -1rem;
+  
+}
+
+.contact .icons-container .contact-icons i {
+  font-size: 3.5rem;
+  height: 6rem;
+  width: 7rem;
+  color: var(--white);
+  line-height: 6rem;
+  border-radius: 30%;
+  background: var(--orange);
+}
+
+.contact .icons-container .contact-icons h3 {
+  font-size: 2.2rem;
+  padding: 1rem 0;
+  color: var(--black);
+}
+
+.contact .icons-container .contact-icons p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: var(--light-color);
+}
+/* end of contact  css icons */
+
+.contact .contact-row form {
+  flex: 1 1 40rem;
+  border: 0.1rem solid var(--main-color);
+  padding: 2rem;
+  background: var(--main-color);
+  border-radius: 30px 30px;
+}
+
+.contact .contact-row form h3 {
+  font-size: 2.5rem;
+  color: #444;
+  padding-bottom: 1rem;
+}
+
+.contact .contact-row form .contact-box {
+  width: 100%;
+  font-size: 1.6rem;
+  padding: 1.2rem 1.4rem;
+  border: 0.1rem solid var(--primary-color);
+  margin: 0.7rem 0;
+}
+
+.contact .contact-row form .contact-box:focus {
+  color: var(--primary-color);
+}
+
+.contact .contact-row form textarea {
+  height: 15rem;
+  resize: none;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  .contact .contact-row .contact-image img {
+    width: 75%;
+  }
+
+  section {
+    padding: 3rem 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .contact .contact-row .contact-image img {
+    width: 60%;
+  }
+}
+.contact-mask {
+  width: 100%;
+  height: 80vh;
+}
+
+.contact-btn {
+  padding: 12px 32px;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  background: #fdc268;
+  color: #222;
+  border: 1px solid #fff;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+  
+}
+.heading {
+  position: relative;
+  color: var(--main-color);
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.heading::after {
+  content: url("../../assets/image/separator11.svg");
+  display: block;
+  width: 100%;
+  margin-inline: auto;
+  margin-top: -1rem;
+}
+
+.contact-intro-img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+.contact-mask::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #3a240a;
+  opacity: 0.8;
+}
+
+.contact-hero {
+  height: 70%;
+  width: 100%;
+  position: relative;
+}
+
+.contact-hero .contact-content {
+  position: relative;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  text-align: center;
+}
+.contact-hero .contact-content h1 {
+  font-size: 4rem;
+  padding: 0.6rem 0 1.5rem;
+}
+.contact-hero .contact-content p {
+  font-size: 1.4rem;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.contact-content .btn {
+  margin: 1rem 0.2rem;
+}
+.contact-hero .contact-content {
+  position: absolute;
+  top: 50%;
+}
+
+@media (max-width: 640px) {
+  .hero .content h1 {
+    font-size: 3rem;
+  }
+  .hero .content p {
+    font-size: 1.4rem;
+  }
+}

@@ -1,0 +1,101 @@
+:root{
+    --main-color: #e9768f;
+    --primary-color: #eff1f3;
+    --bg-color: #f6f8fb;
+    --hover: #5a4d3e;
+    --black:#222;
+    --white:#fff;
+    --border:.1rem solid #aaa;
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+.gallery-heading{
+  
+    text-align: center;
+    color: var(--main-color);
+    margin-bottom: 3rem;
+    font-size: 4rem;
+    margin-top: 4rem;
+}
+
+
+.gallery-section{
+  background-image: url(../../assets/image/back4.png);
+  background-size: 100%;
+  object-fit: cover;
+  background-position: center;
+  
+ 
+
+  padding: 0 1.4rem;
+  margin-top: 10rem;
+
+}
+
+.gallery .gallery-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem;
+    margin:auto;
+}
+
+.gallery .gallery-container .box{
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery .gallery-container .box img{
+  height: 85%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.gallery .gallery-container .box:hover img{
+    transform: scale(1.1);
+    transition: 3s;
+}
+
+.gallery .gallery-container .box .icon{
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 10;
+    height: 90%;
+    width: 100%;
+    background: rgba(0,0,0,.7);
+    display: none;
+}
+
+.gallery .gallery-container .box .icon i{
+    font-size: 6rem;
+    color: var(--white);
+}
+
+.gallery .gallery-container .box:hover .icon{
+    display: flex;
+}
+
+
+@media screen and (max-width: 900px) {
+    .gallery .gallery-container {
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+      gap: 1rem;
+    }
+  
+    .gallery .gallery-container .box .icon i {
+      font-size: 4rem;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .gallery .gallery-container {
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+      gap: 0.5rem;
+    }
+  
+    .gallery .gallery-container .box .icon i {
+      font-size: 3rem;
+    }
+  }

@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root{
+    --primary:#e9768f;
+    --secondary:#f8b756;
+    --hover: #a2d9f5;
+    --black:#333;
+    --white:#fff;
+    --light-color:#666;
+    --light-bg:#eee;
+    --border:.2rem solid rgba(0,0,0,.1);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+.review-heading{
+  text-align: center;
+  color: var(--main-color);
+  margin-bottom: 3rem;
+  font-size: 4rem;
+  margin-top: 4rem;
+}
+
+
+.reviews{
+
+  margin-top: 20rem;
+  background-size: cover;
+  text-align: center;
+}
+
+.reviews .review-slider{
+  padding: 1rem;
+}
+
+.reviews .review-slider .box{
+  width: 75%;
+  justify-content: center;
+  background: var(--white);
+  text-align: center;
+  box-shadow: var(--box-shadow);
+  border-radius: .5rem;
+  /* border: var(--border); */
+  padding: 2rem;
+  margin: auto
+}
+
+.reviews .review-slider .box img{
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+}
+
+.reviews .review-slider .box h3{
+  margin-top: 1rem;
+  font-size: 2rem;
+  color: #e9768f;
+}
+
+.reviews .review-slider .box span{
+  color: var(--light-color);
+  font-size: 1.5rem;
+}
+
+.reviews .review-slider .box .stars{
+  margin: 1.5rem 0;
+}
+
+.reviews .review-slider .box .stars i{
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+
+
+.reviews .review-slider .box p{
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  color: var(--light-color);
+  line-height: 2;
+  margin-bottom: 0;
+}
+
+.swiper-pagination-bullet-active{
+  background: var(--primary);
+}

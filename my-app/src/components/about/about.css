@@ -1,0 +1,55 @@
+.heading-about-head{
+  position: relative;
+  color: #f69b12;
+  font-size: 5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  text-align: center;
+  margin:0 auto;
+}
+.heading-about-head span{
+  color:white !important;
+}
+
+.about{
+    background-color: #e9768f;
+    background-size: 100%;
+    object-fit: cover;
+    background-position: center;
+  }
+  
+  .about .row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3rem;
+  }
+  
+  .about .row .image{
+    flex: 1 1 30rem;
+  }
+  
+  .about .row .image img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .about .row .content{
+    flex: 1 1 60rem;
+  }
+  
+  .about .row .content h3{
+    color: var(--orange);
+    font-size: 3.5rem;
+    line-height: 1.5;
+  }
+  
+  .about .row .content p{
+    font-size: 1.4rem;
+    padding: 3rem 0;
+    color: #fdfafa;
+    line-height: 2;
+  }
+  
+  

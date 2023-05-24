@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap");
+
+:root{
+  --primary-color: #f38209;
+  --secondary: #dbfffe;
+  --black: #141414;
+  --white: #fff;
+  --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+
+html::-webkit-scrollbar{
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+  background: var(--primary-color);
+}
+
+section{
+  padding: 9rem 7%;
+}
+
+
+
+
+
+/* .btn:is(:hover, :focus-visible)::before{
+  bottom: -50%;
+}
+
+.btn:is(:hover, :focus-visible) .text-1{
+  transform: translateY(-4rem);
+}
+
+.btn:is(:hover, :focus-visible) .text-2{
+  top: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+    .shine{
+    position: relative;
+    }
+
+.shine::after{
+  content: "";
+  position: absolute;
+  top: 0; left: 0; 
+  width: 50%;
+  height: 100%;
+  background-image: linear-gradient(to right, transparent 0%, #fff6 100%);
+  transform: skewX(-0.08turn) translateX(-180%);
+}
+
+.shine:is(:hover, :focus-within)::after{
+  transform: skewX(-0.08turn) translateX(275%);
+  transition: 1000ms ease;
+}
+
+/* header */
+
+/* courses */
+
+.courses .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+
+.courses .box-container .box .image{
+  height: 25rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.courses .box-container .box .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.courses .box-container .box:hover .image img{
+  transform: scale(1.1);
+}
+
+.courses .box-container .box .image h3{
+  font-size: 1.5rem;
+  color: #444;
+  position: absolute;
+  top: 1rem; left: 1rem;
+  padding: .5rem 1.5rem;
+  background: var(--white);
+}
+
+.courses .box-container .box .content{
+  padding: 2rem;
+  position: relative;
+  border: 0.1rem solid var(--primary-color);
+}
+
+.courses .box-container .box .content h4{
+  position: absolute;
+  background: var(--primary-color);
+  color: var(--secondary);
+  top: -3rem; right: 1.5rem;
+  width: 7rem; 
+  height: 7rem;
+  line-height: 7rem;
+  text-align: center;
+  font-size: 1.4rem;
+  border-radius: 50%;
+}
+
+.courses .box-container .box .content p{
+  font-size: 2rem;
+  font-weight: bold;
+  color: #444;
+  line-height: 2;
+}
+
+.courses .box-container .box .content h3{
+  font-size: 2rem;
+  color: #444;
+}
+
+.courses .box-container .box .content .stars{
+  padding: 1rem 0;
+}
+
+.courses .box-container .box .content .stars i{
+  font-size: 1.7rem;
+  color: var(--primary-color);
+}
+
+.courses .box-container .box .content .stars span{
+  font-size: 1.4rem;
+  color: #777;
+  margin-left: .5rem;
+}
+
+.courses .box-container .box .content .icons{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 0.1rem solid var(--primary-color);
+}
+
+.courses .box-container .box .content .icons span{
+  font-size: 1.9rem;
+  padding-top: .5rem;
+
+  color: #444;
+}
+
+.courses .box-container .box .content .icons span i{
+  color: var(--primary-color);
+  padding-right: .5rem;
+
+}
+
+/* ends */
+
+
+
+@media (max-width:991px){
+
+  html{
+    font-size: 55%;
+  }
+
+  .header{
+    padding: 2rem 4rem;
+  }
+
+  section{
+    padding: 15rem 2rem;
+  }
+  
+.contact .row .image img{
+  width: 75%;
+}
+
+}
+
+@media (max-width:768px){
+
+  #menu-btn{
+    display: inline-block;
+  }
+
+  .header .navbar{
+    position: absolute;
+    top: 110%; right: -110%;
+    width: 30rem;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    background: var(--white);
+  }
+
+  .header .navbar.active{
+    right: 2rem;
+    transition: .4s linear;
+  }
+
+  .header .navbar a{
+    font-size: 2rem;
+    margin: 1rem 2.5rem;
+    display: block;
+  }
+
+  .home .content h3{
+    font-size: 3rem;
+  }
+
+  .about .container .about-content{
+    padding-left: 0;
+  }
+
+}
+
+@media (max-width:450px){
+  html{
+    font-size: 50%;
+  }
+}

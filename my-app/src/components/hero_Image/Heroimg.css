@@ -1,0 +1,184 @@
+
+
+:root{
+    --orange:#f9ba60;
+    --pink:#e9768f;
+    --black: #1d1c1c;   
+    --white: #fff;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+
+  
+.home{
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    position: relative;
+  }
+  
+  .home .hero-content{
+    flex: 1 1 40rem;
+    padding-top: 6.5rem;
+  }
+  
+  .home .hero-content h3{
+    font-size: 6rem;
+    color: var(--black);
+  }
+  
+  .home .hero-content h3 span{
+    color: var(--orange);
+  }
+  
+  .home .hero-content p{
+    font-size: 1.7rem;
+    color: var(--light-color);
+    line-height: 1.8;
+    padding: 1rem 0;
+  }
+  
+  .home .hero-image{
+    flex: 1 1 40rem;
+  }
+  
+  .home .hero-image img{
+    width: 100%;
+    padding: 4rem;
+  }
+  
+  .custom-shape-divider-bottom-1684324473 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+  
+  .custom-shape-divider-bottom-1684324473 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 107px;
+    transform: rotateY(180deg);
+  }
+  
+  .custom-shape-divider-bottom-1684324473 .shape-fill {
+    fill: var(--pink);
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.mask {
+  width: 100%;
+  height: 100vh;
+}
+.intro-img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+.mask::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #116256;
+  opacity: 0,5;
+}
+
+.hero{
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+}
+
+.hero .content{
+    position:relative;
+    transform:translate(-50%, -50%);
+    top:50%;
+    left:50%;
+    text-align: center;
+    
+
+}
+.hero .content h1{
+    font-size: 4rem;
+    padding: 0.6rem 0 1.5rem;
+    
+}
+.hero .content p{
+    font-size: 1.4rem;
+    font-weight:200;
+    text-transform:uppercase;
+
+}
+
+
+.content .btn{
+    margin: 1rem 0.2rem;
+}
+.hero .content{
+    position: absolute;
+    top:50%;
+}
+
+@media (max-width:640px){
+    .hero .content h1 {
+        font-size:3rem;
+
+    }
+    .hero .content p{
+        font-size:1.4rem;
+    }
+    
+    
+} */

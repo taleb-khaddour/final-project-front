@@ -1,0 +1,28 @@
+div{
+  color:black
+}
+
+.home-offer{
+  text-align: center;
+  margin: 7rem auto;
+  background-color: white;
+
+}
+
+.home-offer .content{
+  max-width:70rem;
+  margin:0 auto;
+}
+
+.home-offer .content h3{
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color:#e9768f;
+}
+
+.home-offer .content p{
+  font-size: 1.5rem;
+  color:var(--light-black);
+  line-height: 2;
+  padding:1rem 0;
+}

@@ -1,0 +1,35 @@
+.suggestion {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    perspective: 800px; /* Define the perspective for 3D */
+  }
+  
+  .suggestion p {
+    margin-bottom: 10px;
+  }
+  
+  .add-button,
+  .delete-button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #4caf50;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transform-style: preserve-3d; /* Enable 3D transforms */
+    transition: transform 0.3s; /* Add transition for smooth effect */
+  }
+  
+  .add-button:hover,
+  .delete-button:hover {
+    transform: rotateY(180deg); /* Apply a 3D rotation on hover */
+  }
