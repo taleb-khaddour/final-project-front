@@ -92,7 +92,8 @@ const ContactUs = () => {
                 send message
               </span>
             </Link>
-          </form>
+          </form> 
+          
         </div>
       </section>
       <br/>
