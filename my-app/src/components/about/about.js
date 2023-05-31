@@ -3,6 +3,7 @@ import "./about.css";
 import AboutImage from "../../assets/image/Untitled design (15).png";
 import "aos/dist/aos.css";
 import Aos from "aos";
+import { Link } from 'react-router-dom';
 
 const About = () => {
 
@@ -30,7 +31,7 @@ useEffect(()=>{
                 Voluptates repudiandae, vel, repellendus nulla consectetur hic et, doloribus cum numquam explicabo temporibus culpa eos aliquam facere similique illum. Aperiam saepe eius tempore natus, ad quo consectetur sunt in laborum.
                 Iusto aliquid commodi ex necessitatibus, praesentium, officia ab modi numquam consequuntur aspernatur unde recusandae, quidem alias suscipit in aut libero incidunt quaerat ea sit saepe error sapiente. Reiciendis, earum eius!
                 Quia ad debitis officiis voluptatum recusandae consequatur! Ad ea ut in corrupti sed delectus iusto dolorem at perferendis aliquam, facilis necessitatibus explicabo vero cumque totam quas. Nihil sed accusamus magnam?</p>
-                <a href="#" className="btn">read more</a>
+                <Link to="#" className="btn">read more</Link>
             </div>
 
         </div>

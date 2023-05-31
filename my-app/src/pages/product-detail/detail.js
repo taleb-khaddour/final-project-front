@@ -11,20 +11,18 @@ const Detail = () => {
   // const[id,setId] = useState(null)
 
   let { id } = useParams();
-
-  const getData = () => {
-    axios
-      .get(`https://idecream-backend.onrender.com/api/subCategory/${id}`)
-      .then((response) => {
-        console.log(response);
-        setData(response.data.data);
-      })
-      .catch((err) => {
-        console.error(err);
-      });
-  };
   useEffect(() => {
-    getData();
+    const getData = () => {
+      axios
+        .get(`https://idecream-backend.onrender.com/api/subCategory/${id}`)
+        .then((response) => {
+          console.log(response);
+          setData(response.data.data);
+        })
+        .catch((err) => {
+          console.error(err);
+        });
+    };
   }, []);
 
   if (!data) return <Loading />;
