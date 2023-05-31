@@ -1,26 +1,11 @@
 import "./Heroimg.css";
 import React from 'react'
-import IntroImage from "../../assets/image/icecream_image2.jpg"
-import { Link } from "react-router-dom";
 import home from "../../assets/image/home.png"
+import { Link } from "@chakra-ui/react";
 const Heroimg = () => {
   return (
     <div className="hero">
-      {/* className="mask" */}
-        {/* <div >
-            <img className="intro-img" src={IntroImage}  alt="intro"/>
-        </div>
-        <div className="content">
-
-        <p>Hi,are you ready to saw</p>
-        <h1> Ice Cream website</h1>
-        <div>
-            {/* <Link to="/product" className="btn"> Product</Link> */}
-            {/* <Link to="/contact" className="btn btn-light"> Product</Link>
-        </div>
-
-        </div> */} */
-        {/* } */}
+  
 
 
 
@@ -29,7 +14,7 @@ const Heroimg = () => {
 <div className="hero-content">
     <h3>welcome to <span>Bilal's iceCream </span></h3>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur minus aut, in maiores quidem </p>
-    <a href="#" className="btn">learn more</a>
+     <Link to="#" className="btn">learn more</Link>
 </div>
 
 <div className="hero-image">

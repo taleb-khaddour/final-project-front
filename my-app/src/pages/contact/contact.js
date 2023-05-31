@@ -1,11 +1,11 @@
-import React, { useRef, useState } from "react";
-import { FaMapMarkerAlt, FaEnvelope, FaPhone, FaClock, FaUserClock, FaRegClock } from "react-icons/fa";
+import React, { useState } from "react";
+import {  FaEnvelope, FaPhone, FaRegClock } from "react-icons/fa";
 import "./contact.css";
 import contact_image from "../../assets/image/contact.gif";
 import Nav from "../../components/Navbar/Navbar.js";
 import Footer from "../../components/footer/footer.js";
-import { Link } from "react-router-dom";
 import Map from "../../components/Map/map.js"
+import { Link } from "react-router-dom";
 
 
 const ContactUs = () => {
@@ -15,7 +15,6 @@ const ContactUs = () => {
     message: "",
   });
 
-  const mapRef = useRef();
 
   const handleNameChange = (event) => {
     setState({ ...state, name: event.target.value });
@@ -88,11 +87,11 @@ const ContactUs = () => {
               rows="10"
               onChange={handleMessageChange}
             ></textarea>
-            <a href="#" className="contact-btn" onClick={handleSubmit}>
+            <Link to="#" className="contact-btn" onClick={handleSubmit}>
               <span className="text text-2" aria-hidden="true" >
                 send message
               </span>
-            </a>
+            </Link>
           </form>
         </div>
       </section>

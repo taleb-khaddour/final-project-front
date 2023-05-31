@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import "./detail.css";
-import detail_image from "../../assets/images/gallery1.jpg"
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import Loading from '../../components/loading/loading.js';

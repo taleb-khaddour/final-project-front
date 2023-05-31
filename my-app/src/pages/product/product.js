@@ -2,7 +2,6 @@ import React from 'react';
 import Nav from '../../components/Navbar/Navbar.js';
 import Footer from '../../components/footer/footer';
 import "./product.css";
-import image from "../../assets/image/icecream_image1.jpg"
 import { FaIceCream, FaStar, FaStarHalf } from 'react-icons/fa';
 import { useState ,useEffect } from 'react';
 import axios from "axios";
