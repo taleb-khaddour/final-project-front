@@ -5,6 +5,7 @@ import contact_image from "../../assets/image/contact.gif";
 import Nav from "../../components/Navbar/Navbar.js";
 import Footer from "../../components/footer/footer.js";
 import { Link } from "react-router-dom";
+import Map from "../../components/map/map.js"
 
 
 const ContactUs = () => {
@@ -69,6 +70,7 @@ const ContactUs = () => {
 
         {/* start map */}
         {/* <Map /> */}
+        <Map />
         {/* end map */}
 
         <div className="contact-row">
