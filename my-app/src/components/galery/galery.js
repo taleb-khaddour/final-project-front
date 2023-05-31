@@ -25,16 +25,16 @@ useEffect(()=>{
     <div className="gallery-section" data-aos="fade-right" data-aos-duration="3000">
       {" "}
       <section
-        class="gallery"
+        className="gallery"
         id="gallery"
         
       >
-        <h1 class="heading">Our gallery</h1>
+        <h1 className="heading">Our gallery</h1>
 
-        <div class="gallery-container" >
-          <a href={gallery1} class="box">
+        <div className="gallery-container" >
+          <a href={gallery1} className="box">
             <img src={gallery1} alt="" />
-            <div class="icon">
+            <div className="icon">
               {" "}
               <i>
                 <FaPlus />
@@ -42,9 +42,9 @@ useEffect(()=>{
             </div>
           </a>
 
-          <a href={gallery2} class="box">
+          <a href={gallery2} className="box">
             <img src={gallery2} alt="" />
-            <div class="icon">
+            <div className="icon">
               {" "}
               <i>
                 <FaPlus />
@@ -52,9 +52,9 @@ useEffect(()=>{
             </div>
           </a>
 
-          <a href={gallery3} class="box">
+          <a href={gallery3} className="box">
             <img src={gallery3} alt="" />
-            <div class="icon">
+            <div className="icon">
               {" "}
               <i>
                 <FaPlus />
@@ -62,9 +62,9 @@ useEffect(()=>{
             </div>
           </a>
 
-          <a href={gallery4} class="box">
+          <a href={gallery4} className="box">
             <img src={gallery4} alt="" />
-            <div class="icon">
+            <div className="icon">
               {" "}
               <i>
                 <FaPlus />
@@ -72,9 +72,9 @@ useEffect(()=>{
             </div>
           </a>
 
-          <a href={gallery5} class="box">
+          <a href={gallery5} className="box">
             <img src={gallery5} alt="" />
-            <div class="icon">
+            <div className="icon">
               {" "}
               <i>
                 <FaPlus />
@@ -82,9 +82,9 @@ useEffect(()=>{
             </div>
           </a>
 
-          <a href={gallery6} class="box">
+          <a href={gallery6} className="box">
             <img src={gallery6} alt="" />
-            <div class="icon">
+            <div className="icon">
               {" "}
               <i>
                 <FaPlus />
@@ -92,9 +92,9 @@ useEffect(()=>{
             </div>
           </a>
 
-          <a href={gallery7} class="box">
+          <a href={gallery7} className="box">
             <img src={gallery7} alt="" />
-            <div class="icon">
+            <div className="icon">
               {" "}
               <i>
                 <FaPlus />
@@ -102,9 +102,9 @@ useEffect(()=>{
             </div>
           </a>
 
-          <a href={gallery8} class="box">
+          <a href={gallery8} className="box">
             <img src={gallery8} alt="" />
-            <div class="icon">
+            <div className="icon">
               {" "}
               <i>
                 <FaPlus />

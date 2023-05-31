@@ -34,14 +34,15 @@ function Navbar1() {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/about">About Us</Link>
+          <Link to="/about">About</Link>
         </li>
         <li>
-          <Link to="/product">Product</Link>
+          <Link to="/product">Menu</Link>
         </li>
         <li>
           <Link to="/contact">Contact</Link>
         </li>
+       
       </ul>
       <div className="hamburger" onClick={handleClick}>
         {click ? (

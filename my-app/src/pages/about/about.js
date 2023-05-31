@@ -18,7 +18,7 @@ const About = () => {
     <div>
       <Nav />
       <section className="home-about" id="home-about">
-      <h1 className="heading"> <span>ABOUT</span> US</h1> 
+      <h1 className="heading-about-head"> <span>About</span> us</h1>
 
         <div className="home-row">
         
@@ -51,12 +51,12 @@ const About = () => {
 
         </div>
       </section>
-      <section class="about-section">
-        <div class="image image-about-us">
+      <section className="about-section">
+        <div className="image image-about-us">
           <img src={AboutImage} alt="" />
         </div>
 
-        <div class="content">
+        <div className="content">
           <h3>why choose us?</h3>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
@@ -69,22 +69,22 @@ const About = () => {
             rerum, delectus voluptate aliquam quaerat iusto repellendus error
             nulla ab atque.
           </p>
-          <div class="icons-container">
-            <div class="icons">
-              <i class="fas fa-map">
+          <div className="icons-container">
+            <div className="icons">
+              <i className="fas fa-map">
                 <FaMap />
               </i>
               <span>top destinations</span>
             </div>
-            <div class="icons">
+            <div className="icons">
               <i>
                 {" "}
                 <FaHandHolding />
               </i>
               <span>affordable price</span>
             </div>
-            <div class="icons">
-              <i class="fas fa-headset">
+            <div className="icons">
+              <i className="fas fa-headset">
                 <FaHeadset />
               </i>
               <span>24/7 guide service</span>

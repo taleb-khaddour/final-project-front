@@ -6,8 +6,11 @@ import About from "../src/pages/about/about.js";
 import Contact from "../src/pages/contact/contact.js";
 import Product from "../src/pages/product/product.js";
 // import Suggestion from "../src/pages/suggestion/suggestion.js";
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes ,useParams} from 'react-router-dom';
 import WhatsAppLink from"./components/watsapp/watsapp.js";
+import Product_detail from "./pages/product-detail/detail.js"
+import Loading from "./components/loading/loading.js";
+import NOTFOUND from "./404/404notFound/notfound.js"
 function App() {
   return (
     <div className="App">
@@ -17,7 +20,9 @@ function App() {
         <Route path="/product" element={<Product />}/>
         <Route path="/about" element={<About />}/>
         <Route path="/contact" element={<Contact />}/>
-        {/* <Route path="/suggestion" element={<Suggestion />}/> */}
+        <Route path="/products/:id" element={<Product_detail />}/>
+        <Route path="/loading" element={<Loading />}/>
+        <Route path="/error" element={<NOTFOUND />}/>
 
        
       </Routes>

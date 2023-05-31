@@ -21,11 +21,11 @@ const Review = () => {
     
     return (
         
-        <section class="reviews" id="reviews" data-aos="fade-up  " data-aos-duration="2000">
+        <section className="reviews" id="reviews" data-aos="fade-up  " data-aos-duration="2000">
 
-        <h1 class="heading">CLIENTS <span>REVIEW</span></h1>
+        <h1 className="heading">CLIENTS <span>REVIEW</span></h1>
 
-        <div class="swiper review-slider" >
+        <div className="swiper review-slider" >
 
 
         <Swiper
@@ -42,13 +42,13 @@ const Review = () => {
         className="mySwiper"
       >
 
-        {/* <div class="swiper-wrapper"> */}
+        {/* <div className="swiper-wrapper"> */}
         <SwiperSlide>
-                <div class="swiper-slide box">
+                <div className="swiper-slide box">
                     <img src={team} alt=""/>
                     <h3>john deo</h3>
                     <span>satisfied client</span>
-                    <div class="stars">
+                    <div className="stars">
                        <i><FaStar /></i>
                        <i><FaStar /></i>
                        <i><FaStar /></i>
@@ -59,11 +59,11 @@ const Review = () => {
                 </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                <div class="swiper-slide box">
+                <div className="swiper-slide box">
                     <img src={team}alt=""/>
                     <h3>john deo</h3>
                     <span>satisfied client</span>
-                    <div class="stars">
+                    <div className="stars">
                         <i><FaStar /></i>
                         <i><FaStar /></i>
                         <i><FaStar /></i>
@@ -74,11 +74,11 @@ const Review = () => {
                 </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                <div class="swiper-slide box">
+                <div className="swiper-slide box">
                     <img src={team} alt=""/>
                     <h3>john deo</h3>
                     <span>satisfied client</span>
-                    <div class="stars">
+                    <div className="stars">
                         <i><FaStar /></i>
                         <i><FaStar /></i>
                         <i><FaStar /></i>
@@ -89,11 +89,11 @@ const Review = () => {
                 </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                <div class="swiper-slide box">
+                <div className="swiper-slide box">
                     <img src={team} alt=""/>
                     <h3>john deo</h3>
                     <span>satisfied client</span>
-                    <div class="stars">
+                    <div className="stars">
                         <i><FaStar /></i>
                         <i><FaStar /></i>
                         <i><FaStar /></i>
@@ -104,11 +104,11 @@ const Review = () => {
                 </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                <div class="swiper-slide box">
+                <div className="swiper-slide box">
                     <img src={team} alt=""/>
                     <h3>john deo</h3>
                     <span>satisfied client</span>
-                    <div class="stars">
+                    <div className="stars">
                         <i><FaStar /></i>
                         <i><FaStar /></i>
                         <i><FaStar /></i>

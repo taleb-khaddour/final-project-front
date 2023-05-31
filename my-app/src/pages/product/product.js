@@ -5,7 +5,10 @@ import "./product.css";
 import image from "../../assets/image/icecream_image1.jpg"
 import { FaIceCream, FaStar, FaStarHalf } from 'react-icons/fa';
 import { useState ,useEffect } from 'react';
-import axios from "axios"
+import axios from "axios";
+import { Link } from 'react-router-dom';
+import Loading from '../../components/loading/loading.js';
+
 
 function Product() {
 
@@ -16,45 +19,46 @@ function Product() {
    },[])
    
    const getData = ()=>{
-    axios.get(`http://localhost:4001/api/subCategory/`).then((response)=>{
-          console.log(response.data.docs)
-          setData(response.data.docs);
+    axios.get(`https://idecream-backend.onrender.com/api/subCategory/`).then((response)=>{
+          console.log(response.data)
+          setData(response.data);
     }).catch((err)=>{
       console.error(err);
     })
    }
   
-  if(!data) return "waitt"
+  if(!data) return <Loading />;
   return (
     <div>
       <Nav />
-      <section class="courses" id="courses">
+      <section className="courses" id="courses">
 
-<h1 class="heading">OUR MENU</h1>
+<h1 className="heading">OUR MENU</h1>
 
-<div class="box-container">
-
+<div className="box-container">
    { data.map((item)=>{ 
    
-   return <div class="box">
-        <div class="image shine">
-            <img src={image} alt=""/>
+   return <div className="box">
+        <div className="image shine">
+          <Link to={`/products/${item._id}`}>
+            <img src={`https://idecream-backend.onrender.com/${item.image}`} alt=""/>
+            </Link>
             <h3>Best</h3>
         </div>
-        <div class="content">
+        <div className="content">
             <h4>{item.price}</h4>
-            <h3>{item.category_id.name}</h3>
-
+            {/* <h3>{item.category_id.name}</h3> */}
+              {console.log(item.size)}
             
-            <p>Xl</p>
-            <div class="stars">
+            <p className='size'>{item.size}</p>
+            <div className="stars">
                 <i><FaStar/></i>
                 <i><FaStar/></i>
                 <i><FaStar/></i>
                 <i><FaStar/></i>
                 <i><FaStarHalf/></i>
             </div>
-            <div class="icons">
+            <div className="icons">
                 <span><i><FaIceCream /></i></span>
                <h3>{item.name}</h3>
             </div>

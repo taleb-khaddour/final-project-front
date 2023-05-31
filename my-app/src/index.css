@@ -50,7 +50,6 @@ ul{
   text-transform: uppercase;
 }
 .heading::after{
-  content: url('../src/assets/image/separator 1.svg');
   display: block;
   width: 100%;
   margin-inline: auto;
@@ -61,11 +60,12 @@ ul{
   font-size: 1rem;
   text-transform: uppercase;
   background: var(--orange);
-  color:#222;
-  border:1px solid #fff;
+  color:#f7f7f7;
+  border:1px solid var(--orange);
   font-weight: 600;
   border-radius:10px;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 .btn-light{
   background: transparent ;
@@ -75,7 +75,8 @@ ul{
 .btn:hover{
   background: var(--main-color);
   color: #ffffff;
-  transition: 0.3s;
+  border-color: #f7f7f7;
+  transition: all 0.3s ease;
 
 }
 

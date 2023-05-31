@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap");
 
 :root{
-  --primary-color: #f38209;
+  --primary-color: #ffcdb2;
   --secondary: #dbfffe;
   --black: #141414;
   --white: #fff;
@@ -118,7 +118,7 @@ section{
 .courses .box-container .box .content p{
   font-size: 2rem;
   font-weight: bold;
-  color: #444;
+  color: var(--primary-color);
   line-height: 2;
 }
 
@@ -133,7 +133,7 @@ section{
 
 .courses .box-container .box .content .stars i{
   font-size: 1.7rem;
-  color: var(--primary-color);
+  color: rgba(255, 196, 1, 0.913);
 }
 
 .courses .box-container .box .content .stars span{

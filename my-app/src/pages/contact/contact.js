@@ -1,11 +1,11 @@
 import React, { useRef, useState } from "react";
 import { FaMapMarkerAlt, FaEnvelope, FaPhone, FaClock, FaUserClock, FaRegClock } from "react-icons/fa";
 import "./contact.css";
-import contact_image from "../../assets/image/contact .png";
-import contact_intro from "../../assets/image/contact-us-lettering.jpg";
+import contact_image from "../../assets/image/contact.gif";
 import Nav from "../../components/Navbar/Navbar.js";
 import Footer from "../../components/footer/footer.js";
 import { Link } from "react-router-dom";
+import Map from "../../components/Map/map.js"
 
 
 const ContactUs = () => {
@@ -42,7 +42,7 @@ const ContactUs = () => {
     
       <section className="contact" id="contact">
         <h1 className="heading">contact us</h1>
-        <div class="icons-container">
+        <div className="icons-container">
 
             <div className="contact-icons">
                 <FaRegClock color="#e9768f" size={40} />
@@ -66,6 +66,12 @@ const ContactUs = () => {
             </div>
 
         </div>
+
+
+
+        {/* start map */}
+        <Map />
+        {/* end map */}
 
         <div className="contact-row">
           <div className="contact-image">

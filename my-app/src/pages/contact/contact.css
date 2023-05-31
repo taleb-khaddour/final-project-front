@@ -16,7 +16,7 @@
 
 .contact {
   width: 90%;
-  margin: 0 2rem;
+  margin: 0 auto;
 }
 .contact .contact-row {
   display: flex;
@@ -48,7 +48,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 1.5rem;
-  margin-bottom: 20rem;
+  margin-bottom: 5rem;
 }
 
 .contact .icons-container .contact-icons {
@@ -167,7 +167,6 @@
   margin-bottom: 3rem;
 }
 .heading::after {
-  content: url("../../assets/image/separator11.svg");
   display: block;
   width: 100%;
   margin-inline: auto;

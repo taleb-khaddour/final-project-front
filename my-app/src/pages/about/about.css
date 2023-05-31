@@ -104,6 +104,8 @@
 background-size: 100%;
 object-fit: cover;
 background-position: center;
+background-color: var(--main-color);
+
 }
  
  .home-about .home-row{
@@ -111,7 +113,6 @@ background-position: center;
    flex-wrap: wrap;
    align-items: center;
    gap: 3rem;
-   background-color: var(--);
  }
  
  .home-about .home-row .home-image{
@@ -131,7 +132,7 @@ background-position: center;
  }
 
  .home-about .home-row .home-content h3{
-   color: #f8b756;
+   color:#4B2B2C;
    font-size: 3.5rem;
    line-height: 1.5;
 
@@ -139,8 +140,8 @@ background-position: center;
  
  .home-about .home-row .home-content p{
    font-size: 1.4rem;
-   padding: 3rem 0;
-   color: #111;
+   padding: 2rem 0;
+   color: #ffffff;
    line-height: 2;
 
 }
@@ -153,7 +154,6 @@ background-position: center;
    align-items: center;
    flex-wrap: wrap;
    gap:3rem;
-   margin-bottom: 6rem;
   background-image: url(../../assets/image/back4.png);
 
    
@@ -174,7 +174,7 @@ background-position: center;
 
 .about-section .content h3{
    font-size: 4rem;
-   color:#fe9d01;
+   color:var(--orange);
 }
 
 .about-section .content p{
