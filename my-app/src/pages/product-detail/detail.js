@@ -17,7 +17,7 @@ const Detail = () => {
 
    useEffect(()=>{
      getData()
-   },[])
+   },[]);
    
    const getData = ()=>{
     axios.get(`https://idecream-backend.onrender.com/api/subCategory/${id}`).then((response)=>{

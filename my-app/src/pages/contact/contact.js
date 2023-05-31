@@ -4,7 +4,6 @@ import "./contact.css";
 import contact_image from "../../assets/image/contact.gif";
 import Nav from "../../components/Navbar/Navbar.js";
 import Footer from "../../components/footer/footer.js";
-import Map from "../../components/Map/map.js"
 import { Link } from "react-router-dom";
 
 
