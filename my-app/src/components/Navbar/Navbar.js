@@ -28,7 +28,9 @@ function Navbar1() {
   return (
     <div className={scroll ? "header header-bg" : "header"}>
       <div className="logo-form">
+      <Link to="/">
   <img src={logo} className="logo"  />
+  </Link>
    
 </div>
 

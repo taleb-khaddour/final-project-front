@@ -12,6 +12,10 @@ const Detail = () => {
 
   let { id } = useParams();
   useEffect(() => {
+    getData(id);
+  }, []);
+
+
     const getData = () => {
       axios
         .get(`https://idecream-backend.onrender.com/api/subCategory/${id}`)
@@ -23,7 +27,7 @@ const Detail = () => {
           console.error(err);
         });
     };
-  }, []);
+  
 
   if (!data) return <Loading />;
   return (
@@ -44,9 +48,10 @@ const Detail = () => {
 
           <div className="content">
             <h3>{data.name}</h3>
+            <span>Description:   </span>
             <p>{data.description}</p>
-            <h4>{data.price} L.L</h4>
-            <h6>{data.size} </h6>
+             <span>Price:</span><h4>{data.price} $</h4>
+           <span>Size:</span> <h6>{data.size} </h6>
           </div>
         </div>
       </section>

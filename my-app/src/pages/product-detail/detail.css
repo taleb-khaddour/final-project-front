@@ -22,7 +22,11 @@
   
   .order .row .content{
     flex: 1 1 30rem;
-    text-align: center;
+  }
+  .order .row .content span{
+    color:var(--main-color);
+    font-size: 30px;
+    font-weight: bolder;
   }
   
   .order .row .content img{
@@ -31,26 +35,27 @@
   }
   
   .order .row .content h3{
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: var(--primary-color);
+    padding-bottom: 3rem;
   }
   
   .order .row .content p{
     font-size: 1.4rem;
-    color: var(--light-black);
+    color: var(--black);
     padding: 1rem 0;
     line-height: 2;
+    padding-bottom: 3rem;
   }
   
   .order .row .content h4{
-    font-size: 2.8rem;
-    color: var(--primary);
+    font-size: 1.8rem;
+    color: var(--black);
   }
   
   .order .row .content h6{
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     color: var(--black);
-    font-weight: normal;
     padding-bottom: 3rem;
   }
   

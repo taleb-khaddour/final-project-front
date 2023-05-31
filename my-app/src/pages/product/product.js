@@ -45,7 +45,7 @@ function Product() {
             <h3>Best</h3>
         </div>
         <div className="content">
-            <h4>{item.price}</h4>
+            <h4>{item.price}$</h4>
             {/* <h3>{item.category_id.name}</h3> */}
               {console.log(item.size)}
             

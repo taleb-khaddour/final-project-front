@@ -106,7 +106,7 @@ const ContactUs = () => {
         {/* end map */}
 
         <div className="contact-row">
-          <div className="contact-image">
+          <div className="contact-image" id="contact">
             <img src={contact_image} alt="" />
           </div>
           <form action="" ref={form} onSubmit={sendEmail}>

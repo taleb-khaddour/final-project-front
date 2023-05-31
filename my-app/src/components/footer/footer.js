@@ -20,16 +20,16 @@ const footer = () => {
         <li><Link to="#">affiliate program</Link></li>
       </ul>
     </div>
-    {/* <div className="footer-col">
-      <h4>get help</h4>
+    <div className="footer-col">
+      <h4>Pages</h4>
       <ul>
-        <li><Link to="#">FAQ</Link></li>
-        <li><Link to="#">delevery</Link></li>
-        <li><Link to="#">returns</Link></li>
-        <li><Link to="#">order status</Link></li>
-        <li><Link to="#">payment options</Link></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">about us</a></li>
+        <li><a href="/contact">contact us</a></li>
+        <li><a href="/">gallery</a></li>
+        <li><a href="/product">Menu</a></li>
       </ul>
-    </div> */}
+    </div>
     <div className="footer-col">
       <h4>online shop</h4>
       <ul>

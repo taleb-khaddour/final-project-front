@@ -17,9 +17,9 @@ const Heroimg = () => {
               Experience a symphony of taste that will leave you craving for more.{" "}
           </p>
           <br />
-          <Link to="/about" className="btn">
-            learn more
-          </Link>
+          <a href="#about" className="btn">
+            Get Started
+          </a>
         </div>
 
         <div className="hero-image">

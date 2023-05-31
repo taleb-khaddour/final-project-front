@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap");
 
 :root{
-  --primary-color: #ffcdb2;
+  --primary-color: darkorange;
   --secondary: #dbfffe;
   --black: #141414;
   --white: #fff;
@@ -18,7 +18,7 @@ html::-webkit-scrollbar-track{
 }
 
 html::-webkit-scrollbar-thumb{
-  background: var(--primary-color);
+  background: #eaa4ef;
 }
 
 section{
@@ -104,8 +104,8 @@ section{
 
 .courses .box-container .box .content h4{
   position: absolute;
-  background: var(--primary-color);
-  color: var(--secondary);
+  background:darkorange;
+  color: var(--black);
   top: -3rem; right: 1.5rem;
   width: 7rem; 
   height: 7rem;

@@ -33,7 +33,7 @@ const Review = () => {
           spaceBetween={30}
           centeredSlides={true}
           autoplay={{
-            delay: 2500,
+            delay: 3000,
             disableOnInteraction: false,
           }}
           pagination={{
@@ -134,7 +134,7 @@ const Review = () => {
           <SwiperSlide>
             <div className="swiper-slide box">
               <img src={team} alt="" />
-              <h3>fathe mhamad</h3>
+              <h3>fathi mhamad</h3>
               <span>satisfied client</span>
               <div className="stars">
                 <i>
