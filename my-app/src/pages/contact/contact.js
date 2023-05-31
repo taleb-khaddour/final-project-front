@@ -68,7 +68,7 @@ const ContactUs = () => {
 
 
         {/* start map */}
-        <Map />
+        {/* <Map /> */}
         {/* end map */}
 
         <div className="contact-row">

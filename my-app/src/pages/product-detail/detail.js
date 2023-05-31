@@ -1,64 +1,60 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 import "./detail.css";
-import axios from 'axios';
-import { useParams } from 'react-router-dom';
-import Loading from '../../components/loading/loading.js';
+import axios from "axios";
+import { useParams } from "react-router-dom";
+import Loading from "../../components/loading/loading.js";
 import Navbar from "../../components/Navbar/Navbar.js";
-import Footer from "../../components/footer/footer.js"
-
+import Footer from "../../components/footer/footer.js";
 
 const Detail = () => {
+  const [data, setData] = useState(null);
+  // const[id,setId] = useState(null)
 
-    const[data ,setData] = useState(null)
-    // const[id,setId] = useState(null)
+  let { id } = useParams();
 
-    let{id}= useParams()
-    
+  const getData = () => {
+    axios
+      .get(`https://idecream-backend.onrender.com/api/subCategory/${id}`)
+      .then((response) => {
+        console.log(response);
+        setData(response.data.data);
+      })
+      .catch((err) => {
+        console.error(err);
+      });
+  };
+  useEffect(() => {
+    getData();
+  }, []);
 
-   useEffect(()=>{
-     getData()
-   },[]);
-   
-   const getData = ()=>{
-    axios.get(`https://idecream-backend.onrender.com/api/subCategory/${id}`).then((response)=>{
-          console.log(response)
-          setData(response.data.data);
-    }).catch((err)=>{
-      console.error(err);
-    })
-   }
-  
-  
-   if(!data) return <Loading />;
+  if (!data) return <Loading />;
   return (
     <>
-    <Navbar />
-    <section className="order" id="order">
+      <Navbar />
+      <section className="order" id="order">
+        <h1 className="heading">
+          <span>PRODUCT</span> DETAIL
+        </h1>
 
-    <h1  className="heading"><span>PRODUCT</span> DETAIL</h1>
+        <div className="row">
+          <div className="image">
+            <img
+              src={`https://idecream-backend.onrender.com/${data.image}`}
+              alt=""
+            />
+          </div>
 
-    <div  className="row">
-    <div  className="image">
-            <img src={`https://idecream-backend.onrender.com/${data.image}`} alt=""/>
-        </div>
-
-        <div  className="content">
+          <div className="content">
             <h3>{data.name}</h3>
             <p>{data.description}</p>
             <h4>{data.price} L.L</h4>
             <h6>{data.size} </h6>
-            
+          </div>
         </div>
-
-       
-
-    </div>
-
-</section>
-<Footer />
-</>
-);
-}; 
-
+      </section>
+      <Footer />
+    </>
+  );
+};
 
 export default Detail;

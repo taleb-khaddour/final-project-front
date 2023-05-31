@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import "./about.css";
 import AboutImage from "../../assets/image/Untitled design (15).png";
 import AboutImage2 from "../../assets/image/about_pic-2.png";
-import IntroImage from "../../assets/image/icecream-about-us.jpg";
 import "aos/dist/aos.css";
 import Aos from "aos";
 import Nav from "../../components/Navbar/Navbar.js";
