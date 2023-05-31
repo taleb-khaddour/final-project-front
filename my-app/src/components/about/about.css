@@ -46,10 +46,14 @@
   }
   
   .about .row .content p{
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     padding: 3rem 0;
     color: #fdfafa;
     line-height: 2;
+    font-weight:lighter;
   }
-  
-  
+  .about .row .content p b{
+    font-size: 2rem;
+    color:#4b2b2c;
+   
+  }

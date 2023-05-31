@@ -22,7 +22,7 @@ useEffect(()=>{
 
 
   return (
-    <div className="gallery-section" data-aos="fade-right" data-aos-duration="3000">
+    <div className="gallery-section" data-aos="fade-right" >
       {" "}
       <section
         className="gallery"

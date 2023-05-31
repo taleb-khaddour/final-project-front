@@ -25,10 +25,6 @@ const MapComponent = () => {
         <iframe
           className="gmap_iframe"
           width="100%"
-          frameBorder="0"
-          scrolling="no"
-          marginHeight="0"
-          marginWidth="0"
           src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=lebanon,Tripoli,jabal mohsen&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
           style={mapIframeStyle}
         ></iframe>

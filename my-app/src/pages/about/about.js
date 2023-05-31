@@ -17,37 +17,32 @@ const About = () => {
     <div>
       <Nav />
       <section className="home-about" id="home-about">
-      <h1 className="heading-about-head"> <span>About</span> us</h1>
+        <h1 className="heading-about-head">
+          {" "}
+          <span>About</span> us
+        </h1>
 
         <div className="home-row">
-        
           <div className="home-content left-about">
             <h3>why we are better?</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptates consequuntur, dolorem, delectus dolorum maxime id dicta
-              soluta vel in totam eos velit expedita similique et provident?
-              Illum quam vel ipsam. Voluptates repudiandae, vel, repellendus
-              nulla consectetur hic et, doloribus cum numquam explicabo
-              temporibus culpa eos aliquam facere similique illum. Aperiam saepe
-              eius tempore natus, ad quo consectetur sunt in laborum. Iusto
-              aliquid commodi ex necessitatibus, praesentium, officia ab modi
-              numquam consequuntur aspernatur unde recusandae, quidem alias
-              suscipit in aut libero incidunt quaerat ea sit saepe error
-              sapiente. Reiciendis, earum eius! Quia ad debitis officiis
-              voluptatum recusandae consequatur! Ad ea ut in corrupti sed
-              delectus iusto dolorem at perferendis aliquam, facilis
-              necessitatibus explicabo vero cumque totam quas. Nihil sed
-              accusamus magnam?
+              Welcome to our ice cream portfolio! Indulge in a delightful
+              collection of frozen treats that are sure to satisfy your
+              cravings. Our carefully crafted flavors, combined with the highest
+              quality ingredients, create a symphony of taste that will
+              transport you to a world of pure bliss. From classic favorites
+              like creamy vanilla and rich chocolate to exotic creations like
+              tangy mango sorbet and refreshing mint chip, our portfolio
+              showcases the diversity and creativity of our ice cream offerings.
+              Each scoop is a work of art, meticulously handcrafted to
+              perfection. Join us on this frozen journey and experience the
+              unparalleled joy of our ice cream creations. Get ready to be
+              whisked away into a world of pure icy delight!
             </p>
-          
           </div>
           <div className="home-image">
             <img src={AboutImage2} alt="" />
-         </div>
-
-
-
+          </div>
         </div>
       </section>
       <section className="about-section">
@@ -58,15 +53,17 @@ const About = () => {
         <div className="content">
           <h3>why choose us?</h3>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
-            numquam nulla iusto corporis dolor commodi libero, vitae obcaecati
-            optio rerum ab culpa nesciunt, earum mollitia quasi ipsam non.
-            Aliquid, iure.
+            We prioritize quality above all else. Our ice creams are made with
+            the finest ingredients, sourced from trusted suppliers. We use fresh
+            dairy, real fruits, and premium chocolates to ensure each bite is a
+            heavenly delight.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-            rerum, delectus voluptate aliquam quaerat iusto repellendus error
-            nulla ab atque.
+            Our ice creams are created with passion and expertise. Our skilled
+            artisans meticulously handcraft each batch, paying attention to
+            every detail to achieve the perfect balance of flavors and textures.
+            We believe in the artistry of ice cream making and strive to deliver
+            a truly exceptional product.
           </p>
           <div className="icons-container">
             <div className="icons">

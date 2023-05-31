@@ -24,8 +24,10 @@ function App() {
         <Route path="/error" element={<NOTFOUND />} />
       </Routes>
       <WhatsAppLink
-        phoneNumber="+96103138537"
-        message="Hello, I'm interested in your product."
+        phoneNumber="+96179143503"
+        message="Hello, please check my orders:
+        
+        ."
       />
     </div>
   );

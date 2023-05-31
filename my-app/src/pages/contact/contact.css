@@ -107,7 +107,7 @@
 }
 
 .contact .contact-row form .contact-box:focus {
-  color: var(--primary-color);
+  color: #ffae00;
 }
 
 .contact .contact-row form textarea {
@@ -133,7 +133,8 @@
     font-size: 50%;
   }
   .contact .contact-row .contact-image img {
-    width: 60%;
+    width: 100%;
+    margin-top: 5rem;
   }
 }
 .contact-mask {
@@ -155,6 +156,15 @@
   margin: 0 auto;
   width: fit-content;
   
+}
+
+.contact-btn:hover{
+  background: var(--main-color);
+  color: #ffffff;
+  border-color: #f7f7f7;
+  transition: all 0.3s ease;
+
+
 }
 .heading {
   position: relative;

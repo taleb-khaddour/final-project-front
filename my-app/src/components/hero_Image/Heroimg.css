@@ -10,7 +10,10 @@
 }
 
 
-  
+.hero{
+  margin: 0 auto;
+  padding: 0 auto;
+}  
 .home{
     min-height: 100vh;
     display: flex;
