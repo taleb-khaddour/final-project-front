@@ -9,8 +9,11 @@ import Map from "../../components/map/map.js"
 import emailjs from '@emailjs/browser';
 import {ToastContainer,toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import axios from "axios";
+
 
 const ContactUs = () => {
+  
 
 
   const form = useRef();
@@ -30,6 +33,7 @@ const ContactUs = () => {
             progress: undefined,
             theme: "light",
             });
+            
             
           
       }, (error) => {
@@ -62,6 +66,11 @@ const ContactUs = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    setState({
+      name: "",
+      email: "",
+      message: "",
+    })
     // Code to handle form submission would go here
   };
 

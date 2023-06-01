@@ -15,19 +15,17 @@ const Detail = () => {
     getData(id);
   }, []);
 
-
-    const getData = () => {
-      axios
-        .get(`https://idecream-backend.onrender.com/api/subCategory/${id}`)
-        .then((response) => {
-          console.log(response);
-          setData(response.data.data);
-        })
-        .catch((err) => {
-          console.error(err);
-        });
-    };
-  
+  const getData = () => {
+    axios
+      .get(`http://localhost:4001/api/subCategory/${id}`)
+      .then((response) => {
+        console.log(response);
+        setData(response.data.data);
+      })
+      .catch((err) => {
+        console.error(err);
+      });
+  };
 
   if (!data) return <Loading />;
   return (
@@ -41,17 +39,18 @@ const Detail = () => {
         <div className="row">
           <div className="image">
             <img
-              src={`https://idecream-backend.onrender.com/${data.image}`}
+              src={`http://localhost:4001/${data.image}`}
               alt=""
             />
           </div>
 
           <div className="content">
             <h3>{data.name}</h3>
-            <span>Description:   </span>
+            <span>Description: </span>
             <p>{data.description}</p>
-             <span>Price:</span><h4>{data.price} $</h4>
-           <span>Size:</span> <h6>{data.size} </h6>
+            <span>Price:</span>
+            <h4>{data.price} $</h4>
+            <span>Size:</span> <h6>{data.size} </h6>
           </div>
         </div>
       </section>

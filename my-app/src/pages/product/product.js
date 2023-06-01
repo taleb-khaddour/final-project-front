@@ -19,7 +19,7 @@ function Product() {
    
    const getData = ()=>{
     axios.get(`https://idecream-backend.onrender.com/api/subCategory/`).then((response)=>{
-          console.log(response.data)
+          // console.log(response.data)
           setData(response.data);
     }).catch((err)=>{
       console.error(err);
@@ -41,13 +41,13 @@ function Product() {
         <div className="image shine">
           <Link to={`/products/${item._id}`}>
             <img src={`https://idecream-backend.onrender.com/${item.image}`} alt=""/>
+            {console.log(item.image)}
             </Link>
             <h3>Best</h3>
         </div>
         <div className="content">
             <h4>{item.price}$</h4>
-            {/* <h3>{item.category_id.name}</h3> */}
-              {console.log(item.size)}
+            <h3>{item.category_id.name}</h3>
             
             <p className='size'>{item.size}</p>
             <div className="stars">

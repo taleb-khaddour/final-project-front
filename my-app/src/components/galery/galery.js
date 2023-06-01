@@ -8,21 +8,17 @@ import gallery6 from "../../assets/images/gallery6.jpg";
 import gallery7 from "../../assets/images/gallery7.jpg";
 import gallery8 from "../../assets/images/gallery8.jpg";
 import { FaPlus } from "react-icons/fa";
-import "aos/dist/aos.css";
-import Aos from "aos";
 import "./galery.css";
 
 const Galery = () => {
 
 
 
-useEffect(()=>{
-    Aos.init();
-},[]);
+
 
 
   return (
-    <div className="gallery-section" data-aos="fade-right"  id="gallery">
+    <div className="gallery-section"  id="gallery">
       {" "}
       <section
         className="gallery"

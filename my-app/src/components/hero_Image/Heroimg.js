@@ -1,15 +1,22 @@
 import "./Heroimg.css";
 import React from "react";
 import home from "../../assets/image/home.png";
-import { Link } from "react-router-dom";
 
 const Heroimg = () => {
+
+
+ 
+
+
+
+
+
   return (
     <div className="hero">
-      <section className="home" id="home">
-        <div className="hero-content">
+      <section className="home" id="home" >
+        <div className="hero-content fade-in-left" >
           <h3>
-            welcome to <span>Bilal's iceCream </span>
+            Welcome to <span>Bilal's iceCream </span>
           </h3>
           <p>
             Welcome to Bilal's Ice Cream, where flavor meets perfection. Indulge
@@ -22,8 +29,8 @@ const Heroimg = () => {
           </a>
         </div>
 
-        <div className="hero-image">
-          <img src={home} alt="" />
+        <div className="hero-image fade-in-right">
+          <img src={home} alt=""/>
         </div>
 
         <div className="custom-shape-divider-bottom-1684324473">

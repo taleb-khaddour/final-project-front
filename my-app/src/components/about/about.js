@@ -22,7 +22,7 @@ const About = () => {
           <img src={AboutImage} alt="" />
         </div>
 
-        <div className="content">
+        <div className="content ">
           <h3>Crafting Delicious Ice Cream Delights</h3>
           <p>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Welcome to Bilal's Ice Cream   </b>, where we take immense pride in our
@@ -45,7 +45,7 @@ const About = () => {
             bring a smile to your face.
           </p>
 
-          <Link to="#" className="btn">
+          <Link to="/about" className="btn">
             read more
           </Link>
         </div>

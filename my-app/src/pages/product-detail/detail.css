@@ -31,13 +31,13 @@
   
   .order .row .content img{
     width: 50%;
-    padding-bottom: 2rem;
+    
   }
   
   .order .row .content h3{
     font-size: 3rem;
     color: var(--primary-color);
-    padding-bottom: 3rem;
+  
   }
   
   .order .row .content p{
@@ -45,7 +45,7 @@
     color: var(--black);
     padding: 1rem 0;
     line-height: 2;
-    padding-bottom: 3rem;
+    
   }
   
   .order .row .content h4{

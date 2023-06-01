@@ -6,7 +6,7 @@
   position: fixed;
   width: 100%;
   height: 90px;
-  z-index: 10 ;
+  z-index: 12 ;
   transition: 0.5s;
   animation: fadeBackground 0.5s;
   background-color: #e9768f;
