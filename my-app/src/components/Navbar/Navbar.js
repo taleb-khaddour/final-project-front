@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes, FaUser } from "react-icons/fa";
 import logo from "../../assets/image/Logo-final.png";
 
 function Navbar1() {
@@ -52,6 +52,9 @@ function Navbar1() {
         </li>
         <li>
           <Link to="/contact">Contact</Link>
+        </li>
+        <li>
+          <a href="https://icecream-dashboard.vercel.app/"><FaUser width={20}/></a>
         </li>
        
       </ul>

@@ -11,7 +11,6 @@ import WhatsAppLink from "./components/watsapp/watsapp.js";
 import Product_detail from "./pages/product-detail/detail.js";
 import Loading from "./components/loading/loading.js";
 import NOTFOUND from "./404/404notFound/notfound.js";
-import Bbimage from "./components/bbimage/bbimage";
 function App() {
   return (
     <div className="App">
@@ -23,11 +22,6 @@ function App() {
         <Route path="/products/:id" element={<Product_detail />} />
         <Route path="/loading" element={<Loading />} />
         <Route path="/*" element={<NOTFOUND />} />
-        <Route path="/upload" element={<Bbimage />} />
-        <Route path="/dashboard" element={<a href="https://icecream-dashboard.vercel.app/"/>}/>
-        
-        
-       
       </Routes>
       <WhatsAppLink
         phoneNumber="+96179143503"
