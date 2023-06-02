@@ -11,16 +11,24 @@ import Loading from '../../components/loading/loading.js';
 
 function Product() {
 
-   const[data ,setData] = useState(null)
+   const[data ,setData] = useState(null);
+   const[categories, setCategories] = useState([]);
+  const[selectedCategory, setSelectedCategory] = useState(null);
+
+  
+// bbimage
+
+
+//bbimage
 
    useEffect(()=>{
      getData()
    },[])
-   
    const getData = ()=>{
     axios.get(`https://idecream-backend.onrender.com/api/subCategory/`).then((response)=>{
-          // console.log(response.data)
+          
           setData(response.data);
+          setCategories(response.data.category_id.name);
     }).catch((err)=>{
       console.error(err);
     })
@@ -40,7 +48,8 @@ function Product() {
    return <div className="box">
         <div className="image shine">
           <Link to={`/products/${item._id}`}>
-            <img src={`https://idecream-backend.onrender.com/${item.image}`} alt=""/>
+            {/* <img src={`https://idecream-backend.onrender.com/${item.image}`} alt=""/> */}
+            <img src={item.image} />  
             {console.log(item.image)}
             </Link>
             <h3>Best</h3>

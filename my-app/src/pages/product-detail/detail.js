@@ -17,7 +17,7 @@ const Detail = () => {
 
   const getData = () => {
     axios
-      .get(`http://localhost:4001/api/subCategory/${id}`)
+      .get(`https://idecream-backend.onrender.com/api/subCategory/${id}`)
       .then((response) => {
         console.log(response);
         setData(response.data.data);
@@ -39,7 +39,8 @@ const Detail = () => {
         <div className="row">
           <div className="image">
             <img
-              src={`http://localhost:4001/${data.image}`}
+              src={data.image}
+              
               alt=""
             />
           </div>

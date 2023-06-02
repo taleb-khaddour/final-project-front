@@ -23,7 +23,7 @@ const ContactUs = () => {
 
     emailjs.sendForm('service_lwfleep', 'template_93ljecm', form.current, 'M4dtM0rT5BvMIOwGo')
       .then((result) => {
-        toast.success('🦄 your email is send,thank you !', {
+        toast.success('                                                                                                                                    your email is send,thank you !', {
             position: "top-right",
             autoClose: 5000,
             hideProgressBar: false,
@@ -120,14 +120,15 @@ const ContactUs = () => {
           </div>
           <form action="" ref={form} onSubmit={sendEmail}>
             <h3>send us a message</h3>
-            <input type="text" placeholder="name" className="contact-box" onChange={handleNameChange}  name="from_name" />
-            <input type="email" placeholder="email" className="contact-box" onChange={handleEmailChange} name="from_email"/>
+            <input type="text" placeholder="name" className="contact-box" onChange={handleNameChange} required name="from_name" />
+            <input type="email" placeholder="email" className="contact-box" onChange={handleEmailChange} required name="from_email"/>
             <textarea
               placeholder="message"
               className="contact-box"
               name="message"
               cols="30"
               rows="10"
+              required
               onChange={handleMessageChange}
             ></textarea>
             <Link to="#" className="contact-btn" onClick={sendEmail}>
