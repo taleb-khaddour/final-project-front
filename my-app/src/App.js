@@ -22,8 +22,12 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/products/:id" element={<Product_detail />} />
         <Route path="/loading" element={<Loading />} />
-        <Route path="/error" element={<NOTFOUND />} />
+        <Route path="/*" element={<NOTFOUND />} />
         <Route path="/upload" element={<Bbimage />} />
+        <Route path="/dashboard" element={<a href="https://icecream-dashboard.vercel.app/"/>}/>
+        
+        
+       
       </Routes>
       <WhatsAppLink
         phoneNumber="+96179143503"
