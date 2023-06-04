@@ -13,21 +13,28 @@
     background: var(--bg);
   }
   
-  .order .row{
+ 
+  .order .row {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
     align-items: center;
+    box-shadow: 0 0 10px rgb(0, 0, 0,0.3);
+    padding: 2rem 1rem;
+    border-radius: 50px;
   }
+  
   
   .order .row .content{
     flex: 1 1 30rem;
   }
   .order .row .content span{
-    color:var(--main-color);
-    font-size: 30px;
+    color: var(--main-color);
+    font-size: 19px;
     font-weight: bolder;
-  }
+    line-height: 2.2;
+}
+  
   
   .order .row .content img{
     width: 50%;
@@ -36,6 +43,7 @@
   
   .order .row .content h3{
     font-size: 3rem;
+    text-decoration: underline;
     color: var(--primary-color);
   
   }
@@ -43,8 +51,8 @@
   .order .row .content p{
     font-size: 1.4rem;
     color: var(--black);
-    padding: 1rem 0;
     line-height: 2;
+    font-weight: bolder;
     
   }
   

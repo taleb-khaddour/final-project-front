@@ -47,7 +47,7 @@ const Detail = () => {
 
           <div className="content">
             <h3>{data.name}</h3>
-            <span>Description: </span>
+            <span>Description:</span>
             <p>{data.description}</p>
             <span>Price:</span>
             <h4>{data.price} $</h4>
