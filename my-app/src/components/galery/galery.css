@@ -65,10 +65,17 @@
     background: rgba(0,0,0,.7);
     display: none;
 }
+.gallery .gallery-container .box .title-gallery h6{ 
+  text-align: center;
+  color: var(--white);
+  margin-bottom: 1rem;
+
+}
 
 .gallery .gallery-container .box .icon i{
     font-size: 6rem;
     color: var(--white);
+    text-align: center;
 }
 
 .gallery .gallery-container .box:hover .icon{

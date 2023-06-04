@@ -29,19 +29,22 @@ const Galery = () => {
       <section className="gallery" id="gallery">
         <h1 className="heading">Our gallery</h1>
 
-        <div className="gallery-container" >
-        {data.length > 0 &&
-          data.map((item) => (
-            <Link to={`/products/${item._id}`} className="box">
+        <div className="gallery-container">
+          {data.length > 0 &&
+            data.map((item) => (
+              <Link to={`/products/${item._id}`} className="box">
                 <img src={item.image} alt="" />
                 <div className="icon ">
                   <i>
+                    <div className="title-gallery">
+                      <h6>{item.name}</h6>
+                    </div>
                     <FaPlus className="rotate-center" />
                   </i>
                 </div>
               </Link>
-          ))}
-          </div>
+            ))}
+        </div>
       </section>
     </div>
   );

@@ -24,6 +24,7 @@
     align-items: center;
     width:200px;
     height: 30vh;
+    
     background-color: #4f7f33;
   }
   .loading{
@@ -66,6 +67,12 @@
   @keyframes colorShift {
     to {
       background-position: 0 175px
+    }
+  }
+  @media  (max-width: 768px) {
+    .loader {
+
+    height: 35vh;
     }
   }
   

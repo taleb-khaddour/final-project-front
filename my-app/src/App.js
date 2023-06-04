@@ -21,6 +21,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/products/:id" element={<Product_detail />} />
         <Route path="/loading" element={<Loading />} />
+       
+
         <Route path="/*" element={<NOTFOUND />} />
       </Routes>
       <WhatsAppLink

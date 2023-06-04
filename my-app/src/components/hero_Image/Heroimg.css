@@ -143,3 +143,9 @@
     opacity: 1;
   }
 }
+@media (max-width: 991px) {
+  .hero-content {
+   
+    padding: 0 2rem;
+  }
+}
