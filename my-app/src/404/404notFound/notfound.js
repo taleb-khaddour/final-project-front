@@ -3,7 +3,7 @@ import "./notfound.css";
 
 const notfound = () => {
   return (
-    <div className='NotFound-body'><a href="https://codepen.io/uiswarup/full/yLzypyY" target="_blank">
+    <div className='NotFound-body'><a href="/" target="_blank">
     <header className="top-header">
   </header>
   
