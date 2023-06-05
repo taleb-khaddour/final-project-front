@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Nav from '../../components/Navbar/Navbar.js';
 import Footer from '../../components/footer/footer';
 import "./product.css";
-import { FaIceCream, FaStar, FaStarHalf, FaSearch } from 'react-icons/fa';
+import { FaIceCream, FaSearch, FaStar, FaStarHalf } from 'react-icons/fa';
 import axios from "axios";
 import { Link } from 'react-router-dom';
 import Loading from '../../components/loading/loading.js';
@@ -56,7 +56,6 @@ function Product() {
             onChange={handleSearch}
             className="search-input"
           />
-          <FaSearch className="search-icon" />
         </div>
 
         <div className="box-container">

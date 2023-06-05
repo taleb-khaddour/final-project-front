@@ -1,42 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap");
 
-:root {
+:root{
   --primary-color: darkorange;
   --secondary: #dbfffe;
   --black: #141414;
   --white: #fff;
-  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
-html::-webkit-scrollbar {
+
+html::-webkit-scrollbar{
   width: 1rem;
 }
 
-html::-webkit-scrollbar-track {
+html::-webkit-scrollbar-track{
   background: transparent;
 }
 
-html::-webkit-scrollbar-thumb {
+html::-webkit-scrollbar-thumb{
   background: darkorange;
 }
 
-section {
+section{
   padding: 9rem 7%;
 }
+
 
 /* product.css */
 .search-container {
   margin-bottom: 20px;
-  position: relative;
-  width: 400px;
 }
 
 .search-input {
   width: 100%;
   max-width: 400px;
   height: 40px;
-  padding: 10px 40px 10px 10px;
-  border: 1px solid darkorange;
+  padding: 10px;
+  border: none;
   border-radius: 20px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   font-size: 16px;
@@ -44,19 +44,11 @@ section {
   transition: box-shadow 0.3s ease;
 }
 
-.search-icon {
-  position: absolute;
-  top: 50%;
-  left: 360px;
-  /* right: 10px; */
-  transform: translateY(-50%);
-  font-size: 20px;
-  color: #888;
-}
-
 .search-input:focus {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
+
+
 
 /* .btn:is(:hover, :focus-visible)::before{
   bottom: -50%;
@@ -71,22 +63,21 @@ section {
   transform: translate(-50%, -50%);
 } */
 
-.shine {
-  position: relative;
-}
+    .shine{
+    position: relative;
+    }
 
-.shine::after {
+.shine::after{
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0; left: 0; 
   width: 50%;
   height: 100%;
   background-image: linear-gradient(to right, transparent 0%, #fff6 100%);
   transform: skewX(-0.08turn) translateX(-180%);
 }
 
-.shine:is(:hover, :focus-within)::after {
+.shine:is(:hover, :focus-within)::after{
   transform: skewX(-0.08turn) translateX(275%);
   transition: 1000ms ease;
 }
@@ -95,53 +86,49 @@ section {
 
 /* courses */
 
-.courses .box-container {
+.courses .box-container{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 2rem;
 }
 
-.courses .box-container .box .image {
-  width: 376px;
-  height: 300px;
+.courses .box-container .box .image{
+  height: 25rem;
   overflow: hidden;
   position: relative;
 }
 
-.courses .box-container .box .image img {
+.courses .box-container .box .image img{
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
-.courses .box-container .box:hover .image img {
+.courses .box-container .box:hover .image img{
   transform: scale(1.1);
 }
 
-.courses .box-container .box .image h3 {
+.courses .box-container .box .image h3{
   font-size: 1.5rem;
   color: #444;
   position: absolute;
-  top: 1rem;
-  left: 1rem;
-  padding: 0.5rem 1.5rem;
+  top: 1rem; left: 1rem;
+  padding: .5rem 1.5rem;
   background: var(--white);
 }
 
-.courses .box-container .box .content {
+.courses .box-container .box .content{
   padding: 2rem;
   position: relative;
   border: 0.1rem solid var(--primary-color);
-  width: 376px;
 }
 
-.courses .box-container .box .content h4 {
+.courses .box-container .box .content h4{
   position: absolute;
-  background: darkorange;
+  background:darkorange;
   color: var(--black);
-  top: -3rem;
-  right: 1.5rem;
-  width: 7rem;
+  top: -3rem; right: 1.5rem;
+  width: 7rem; 
   height: 7rem;
   line-height: 7rem;
   text-align: center;
@@ -149,34 +136,35 @@ section {
   border-radius: 50%;
 }
 
-.courses .box-container .box .content p {
+.courses .box-container .box .content p{
   font-size: 2rem;
   font-weight: bold;
-  color: #e9768f !important;
+  color:#e9768f !important;
   line-height: 2;
 }
 
-.courses .box-container .box .content h3 {
+
+.courses .box-container .box .content h3{
   font-size: 2rem;
   color: #444;
 }
 
-.courses .box-container .box .content .stars {
+.courses .box-container .box .content .stars{
   padding: 1rem 0;
 }
 
-.courses .box-container .box .content .stars i {
+.courses .box-container .box .content .stars i{
   font-size: 1.7rem;
   color: rgba(255, 196, 1, 0.913);
 }
 
-.courses .box-container .box .content .stars span {
+.courses .box-container .box .content .stars span{
   font-size: 1.4rem;
   color: #777;
-  margin-left: 0.5rem;
+  margin-left: .5rem;
 }
 
-.courses .box-container .box .content .icons {
+.courses .box-container .box .content .icons{
   display: flex;
   justify-content: left;
   align-items: center;
@@ -185,75 +173,83 @@ section {
   border-top: 0.1rem solid darkorange;
 }
 
-.courses .box-container .box .content .icons span {
+.courses .box-container .box .content .icons span{
   font-size: 1.9rem;
-  padding-top: 0.5rem;
+  padding-top: .5rem;
 
   color: #444;
 }
 
-.courses .box-container .box .content .icons span i {
+.courses .box-container .box .content .icons span i{
   color: var(--primary-color);
-  padding-right: 0.5rem;
+  padding-right: .5rem;
+
 }
 
 /* ends */
 
-@media (max-width: 991px) {
-  html {
+
+
+@media (max-width:991px){
+
+  html{
     font-size: 55%;
   }
+  .courses{padding-top: 15rem;}
 
-  .header {
+  .header{
     padding: 2rem 4rem;
   }
 
-  section {
+  section{
     padding: 15rem 1rem;
   }
-
-  .contact .row .image img {
-    width: 75%;
-  }
+  
+.contact .row .image img{
+  width: 75%;
 }
 
-@media (max-width: 768px) {
-  #menu-btn {
+}
+
+@media (max-width:768px){
+
+  #menu-btn{
     display: inline-block;
   }
+  .courses{padding-top: 15rem;}
 
-  .header .navbar {
+  .header .navbar{
     position: absolute;
-    top: 110%;
-    right: -110%;
+    top: 110%; right: -110%;
     width: 30rem;
     box-shadow: var(--box-shadow);
-    border-radius: 0.5rem;
+    border-radius: .5rem;
     background: var(--white);
   }
 
-  .header .navbar.active {
+  .header .navbar.active{
     right: 2rem;
-    transition: 0.4s linear;
+    transition: .4s linear;
   }
 
-  .header .navbar a {
+  .header .navbar a{
     font-size: 2rem;
     margin: 1rem 2.5rem;
     display: block;
   }
 
-  .home .content h3 {
+  .home .content h3{
     font-size: 3rem;
   }
 
-  .about .container .about-content {
+  .about .container .about-content{
     padding-left: 0;
   }
+
 }
 
-@media (max-width: 450px) {
-  html {
+@media (max-width:450px){
+  html{
     font-size: 50%;
   }
 }
