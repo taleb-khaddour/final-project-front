@@ -107,6 +107,7 @@ object-fit: cover;
 background-position: center;
 background-color: var(--main-color);
 
+
 }
  
  .home-about .home-row{
@@ -211,7 +212,12 @@ background-color: var(--main-color);
    display:block;
 }
 
-
+@media screen {
+   
+   .home-about{
+      padding-top: 17rem;
+   }
+} 
 
  
  

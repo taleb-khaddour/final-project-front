@@ -22,6 +22,7 @@ function App() {
         <Route path="/products/:id" element={<Product_detail />} />
         <Route path="/loading" element={<Loading />} />
         <Route path="/suggestion" element={<Suggestion />} />
+        
        
 
         <Route path="/*" element={<NOTFOUND />} />
