@@ -17,7 +17,7 @@ const footer = () => {
         <li><Link to="/about">about us</Link></li>
         <li><Link to="#">our services</Link></li>
         <li><Link to="#">privacy policy</Link></li>
-        <li><Link to="#">affiliate program</Link></li>
+        <li><Link to="/suggestion">your suggestion</Link></li>
       </ul>
     </div>
     <div className="footer-col">

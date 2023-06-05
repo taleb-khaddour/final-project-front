@@ -1,0 +1,293 @@
+:root {
+  --main-color: #e9768f;
+  --primary-color: #eff1f3;
+  --bg-color: #f6f8fb;
+  --hover: #5a4d3e;
+  --black: #222;
+  --white: #fff;
+  --border: 0.1rem solid #aaa;
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  --orange: #ff9800;
+  --light-color: #666;
+}
+
+.suggestion {
+  width: 100%;
+}
+
+.suggestion-content {
+  width: 100%;
+}
+
+.suggestion-content .text-content {
+  padding-right: 2rem;
+  margin-right: 2rem;
+  max-width: 53rem;
+}
+
+.suggestion-content .content {
+  display: flex;
+  text-align: left;
+}
+
+.suggestion-content .content h3 {
+  font-size: 4rem;
+  color: var(--orange);
+}
+
+.suggestion-content .content p {
+  font-size: 1.5rem;
+  color: rgb(13, 12, 12);
+  line-height: 2;
+  padding: 1rem 0;
+}
+
+.suggestion .suggestion-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+.suggestion .suggestion-row .suggestion-image {
+  flex: 1 1 40rem;
+}
+
+.suggestion .suggestion-row .suggestion-image img {
+  width: 100%;
+}
+
+/* suggestion css icons */
+
+.heading-icons {
+  font-size: 4rem;
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin-bottom: 6rem;
+}
+
+.suggestion .icons-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 5rem;
+}
+
+.suggestion .icons-container .suggestion-icons {
+  padding: 2rem;
+  box-shadow: var(--box-shadow);
+  border-radius: 2rem;
+  text-align: center;
+  outline: 0.1rem solid rgba(0, 0, 0, 0.1);
+  outline-offset: -1rem;
+}
+
+.suggestion .icons-container .suggestion-icons i {
+  font-size: 3.5rem;
+  height: 6rem;
+  width: 7rem;
+  color: var(--white);
+  line-height: 6rem;
+  border-radius: 30%;
+  background: var(--orange);
+}
+
+.suggestion .icons-container .suggestion-icons h3 {
+  font-size: 2.2rem;
+  padding: 1rem 0;
+  color: var(--black);
+}
+
+.suggestion .icons-container .suggestion-icons p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: var(--light-color);
+}
+/* end of suggestion css icons */
+
+.suggestion .suggestion-row form {
+  flex: 0 1 48rem;
+  border: 0.1rem solid var(--main-color);
+  padding: 2rem;
+  background: var(--main-color);
+  border-radius: 30px;
+  height: fit-content;
+  width: 50%;
+}
+
+.suggestion .suggestion-row form h3 {
+  font-size: 2.5rem;
+  color: #444;
+  padding-bottom: 1rem;
+}
+
+.suggestion .suggestion-row form .suggestion-box {
+  width: 100%;
+  font-size: 1.6rem;
+  padding: 1.2rem 1.4rem;
+  border: 0.1rem solid var(--primary-color);
+  margin: 0.7rem 0;
+}
+
+.suggestion .suggestion-row form .suggestion-box:focus {
+  color: #ffae00;
+}
+
+.suggestion .suggestion-row form textarea {
+  height: 15rem;
+  resize: none;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  .suggestion .suggestion-row .suggestion-image img {
+    width: 75%;
+  }
+  section {
+    padding: 3rem 2rem;
+  }
+  .suggestion-content .content {
+    display: block;
+    margin: auto;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .suggestion .suggestion-row .suggestion-image img {
+    width: 100%;
+    margin-top: 5rem;
+  }
+}
+
+.suggestion-mask {
+  width: 100%;
+  height: 80vh;
+}
+
+.suggestion-btn {
+  padding: 12px 32px;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  background: #fdc268;
+  color: #222;
+  border: 1px solid #fff;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.suggestion-btn:hover {
+  background: var(--main-color);
+  color: #ffffff;
+  border-color: #f7f7f7;
+  transition: all 0.3s ease;
+}
+
+.heading {
+  position: relative;
+  color: var(--main-color);
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+}
+
+.heading::after {
+  display: block;
+  width: 100%;
+  margin-inline: auto;
+  margin-top: -1rem;
+}
+
+.suggestion-intro-img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+
+.suggestion-mask::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #3a240a;
+  opacity: 0.8;
+}
+
+.suggestion-hero {
+  height: 70%;
+  width: 100%;
+  position: relative;
+}
+
+.suggestion-hero .suggestion-content {
+  position: relative;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  text-align: center;
+}
+
+.suggestion-hero .suggestion-content h1 {
+  font-size: 4rem;
+  padding: 0.6rem 0 1.5rem;
+}
+
+.suggestion-hero .suggestion-content p {
+  font-size: 1.4rem;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.suggestion-content .btn {
+  margin: 1rem 0.2rem;
+}
+
+.suggestion-hero .suggestion-content {
+  position: absolute;
+  top: 50%;
+}
+
+
+@media (max-width: 790px) {
+  .suggestion .suggestion-row form {
+    align-items: center;
+    margin:0 auto;
+  }
+  .text-content{
+    margin: 0 auto;
+  }
+
+}
+
+
+@media (max-width: 640px) {
+  .hero .content h1 {
+    font-size: 3rem;
+  }
+  .hero .content p {
+    font-size: 1.4rem;
+  }
+}
+
+.gap-suggestion {
+  width: 100%;
+  height: 20vh;
+}

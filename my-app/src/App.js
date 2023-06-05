@@ -5,7 +5,7 @@ import Home from "./pages/home/home.js";
 import About from "../src/pages/about/about.js";
 import Contact from "../src/pages/contact/contact.js";
 import Product from "../src/pages/product/product.js";
-// import Suggestion from "../src/pages/suggestion/suggestion.js";
+import Suggestion from "../src/pages/suggestion/suggestion.js";
 import { Route, Routes } from "react-router-dom";
 import WhatsAppLink from "./components/watsapp/watsapp.js";
 import Product_detail from "./pages/product-detail/detail.js";
@@ -21,6 +21,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/products/:id" element={<Product_detail />} />
         <Route path="/loading" element={<Loading />} />
+        <Route path="/suggestion" element={<Suggestion />} />
        
 
         <Route path="/*" element={<NOTFOUND />} />
