@@ -7,6 +7,7 @@ import Aos from "aos";
 import Nav from "../../components/Navbar/Navbar.js";
 import Footer from "../../components/footer/footer.js";
 import { FaHandHolding, FaHeadset, FaMap } from "react-icons/fa";
+import ScrollToTopOnMount from "../../components/ScrollToTopOnMount";
 
 const About = () => {
   useEffect(() => {
@@ -16,6 +17,7 @@ const About = () => {
   return (
     <div>
       <Nav />
+      <ScrollToTopOnMount />
       <section className="home-about" id="home-about">
         <h1 className="heading-about-head">
           {" "}
