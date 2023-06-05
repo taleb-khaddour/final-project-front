@@ -26,7 +26,7 @@
 
 .home .hero-content {
   flex: 1 1 40rem;
-  padding-top: 6.5rem;
+    
 }
 
 .home .hero-content h3 {
@@ -51,7 +51,10 @@
 
 .home .hero-image img {
   width: 100%;
-  padding: 4rem;
+  padding-bottom: 10rem;
+  padding-right: 4rem;
+  padding-left: 4rem;
+  padding-top: 4rem;
 }
 
 .custom-shape-divider-bottom-1684324473 {
