@@ -9,6 +9,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 import Map from "../../components/map/map.js"
+import ScrollToTopOnMount from "../../components/ScrollToTopOnMount";
 
 const ContactUs = () => {
   const [name, setName] = useState('');
@@ -62,6 +63,8 @@ const ContactUs = () => {
   return (
     <>
       <Nav />
+      <ScrollToTopOnMount />
+
       <br />
 
       <section className="contact" id="contact">

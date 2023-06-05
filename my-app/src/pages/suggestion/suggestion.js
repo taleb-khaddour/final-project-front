@@ -5,6 +5,7 @@ import Footer from "../../components/footer/footer.js";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { FaSmile } from "react-icons/fa";
+import ScrollToTopOnMount from "../../components/ScrollToTopOnMount";
 
 const Suggestion = () => {
   const [name, setName] = useState("");
@@ -52,6 +53,8 @@ const Suggestion = () => {
   return (
     <>
       <Nav />
+      <ScrollToTopOnMount />
+
       <section className="suggestion" id="suggestion">
         <div className="suggestion-content">
           <div className="gap-suggestion">

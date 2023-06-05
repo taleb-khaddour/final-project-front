@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import Loading from "../../components/loading/loading.js";
 import Navbar from "../../components/Navbar/Navbar.js";
 import Footer from "../../components/footer/footer.js";
+import ScrollToTopOnMount from "../../components/ScrollToTopOnMount";
 
 const Detail = () => {
   const [data, setData] = useState(null);
@@ -31,6 +32,8 @@ const Detail = () => {
   return (
     <>
       <Navbar />
+      <ScrollToTopOnMount />
+
       <section className="order" id="order">
         <h1 className="heading">
           <span>PRODUCT</span> DETAIL

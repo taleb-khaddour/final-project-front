@@ -7,6 +7,7 @@ import { useState ,useEffect } from 'react';
 import axios from "axios";
 import { Link } from 'react-router-dom';
 import Loading from '../../components/loading/loading.js';
+import ScrollToTopOnMount from '../../components/ScrollToTopOnMount.jsx';
 
 
 function Product() {
@@ -38,6 +39,8 @@ function Product() {
   return (
     <div>
       <Nav />
+      <ScrollToTopOnMount />
+
       <section className="courses" id="courses">
 
 <h1 className="heading">OUR MENU</h1>

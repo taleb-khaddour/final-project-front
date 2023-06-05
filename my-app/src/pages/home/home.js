@@ -7,10 +7,12 @@ import Galery from "../../components/galery/galery.js";
 import Review from "../../components/review/review.js";
 import AboutComponents from "../../components/about/about.js";
 import { Link } from "react-router-dom";
+import ScrollToTopOnMount from "../../components/ScrollToTopOnMount";
 function home() {
   return (
     <div>
       <Nav />
+      <ScrollToTopOnMount />
       <Heroimg />
       <AboutComponents />
       <Galery />
